@@ -3,25 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
 
     <title>Weather Forecast</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/lunanarae" target="_blank">Narae </a>
-      , hosted on
-      <a href="https://github.com/lunanarae/Weather-app-project" target="_blank"
-        >github</a
-      >
-      and website hosted on
-      <a href="https://welcomeweatherapp.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <div class="current-weather" id="current-weather">
+          <span class="icon" id="icon">⛄️</span>
+          <span class="temperature" id="temperature">20°C</span>
+        </div>
+        <p>
+          Last updated :<span class="current-time" id="current-time"
+            >Sat 20:30</span
+          >
+          <br />
+          <span id="condition">Raining</span>
+          <br />
+          Humidity: <span id="humidity">20%</span> Wind:
+          <span id="wind-speed">15km/h</span>
+        </p>
+      </header>
+      <main>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="location"
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input
+            type="submit"
+            value="search"
+            class="search-button"
+            id="search-button"
+          />
+        </form>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              Mon
+              <br />
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                art=""
+              />
+              <br />
+              <span class="max-temp">18°</span>
+              <span class="min-temp">12°</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <br />
+      <hr />
+      <br />
+      <footer>
+        This project was coded by
+        <a href="https://github.com/lunanarae" target="_blank">Narae </a>
+        , hosted on
+        <a href="https://github.com/lunanarae/Weather-Forecast" target="_blank"
+          >github</a
+        >
+        and website hosted on
+        <a href="https://showweatherforecast.netlify.app" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

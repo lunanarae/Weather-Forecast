@@ -1,3 +1,80 @@
-h1 {
-  color: blue;
+body {
+  background: linear-gradient(
+    123.5deg,
+    rgb(244, 219, 251) 29.3%,
+    rgb(255, 214, 214) 67.1%
+  );
+  font-family: "Kode Mono", monospace;
+}
+a {
+  color: rgb(196, 212, 244);
+}
+.container {
+  max-width: 550px;
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+  color: rgb(196, 212, 244);
+  margin: 80px auto;
+  border: none;
+  border-radius: 20px;
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 20px;
+}
+.icon {
+  font-size: 80px;
+}
+.temperature {
+  font-size: 80px;
+}
+.search-form {
+  padding: 20px;
+}
+.search-form-input {
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+}
+.search-button {
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(
+    123.5deg,
+    rgb(244, 219, 251) 29.3%,
+    rgb(255, 214, 214) 67.1%
+  );
+  color: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+}
+p {
+  margin: 30px;
+}
+.weather-forecast {
+  margin: 30px;
+}
+.min-temp {
+  opacity: 0.6;
+}
+hr {
+  color: inear-gradient(
+    123.5deg,
+    rgb(244, 219, 251) 29.3%,
+    rgb(255, 214, 214) 67.1%
+  );
+  max-width: 85%;
+}
+footer {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 30px;
 }
