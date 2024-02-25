@@ -20,16 +20,15 @@
           <span class="icon" id="icon">⛄️</span>
           <span class="temperature" id="temperature">20°C</span>
         </div>
-        <p>
-          Last updated :<span class="current-time" id="current-time"
-            >Sat 20:30</span
-          >
-          <br />
-          <span id="condition">Raining</span>
-          <br />
-          Humidity: <span id="humidity">20%</span> Wind:
-          <span id="wind-speed">15km/h</span>
-        </p>
+        <p class="details"></p>
+        <div id="location">Perth</div>
+        Last updated:
+        <span class="current-time" id="current-time">Sat 20:30</span>
+        <br />
+        <span id="condition">Raining</span>
+        <br />
+        Humidity: <span id="humidity">20%</span> Wind:
+        <span id="wind-speed">15km/h</span>
       </header>
       <main>
         <form class="search-form" id="search-form">
@@ -47,6 +46,7 @@
             id="search-button"
           />
         </form>
+
         <div class="weather-forecast">
           <div class="row">
             <div class="col-2">
