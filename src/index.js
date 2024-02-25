@@ -8,3 +8,7 @@ function search(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", search);
+
+let apiKey = "033b43a04493c2b0f53e8fe8bdote92d";
+let apiUrl =
+  "https://api.shecodes.io/weather/v1/current?query=${location}&key={apiKey}&unit=metric";
