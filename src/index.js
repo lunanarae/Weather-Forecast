@@ -18,6 +18,8 @@ function currentWeatherDetails(response) {
   timeElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = `${Math.round(temperature)}°C`;
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+
+  getForecast(response.data.city);
 }
 function searchCity(city) {
   let apiKey = "033b43a04493c2b0f53e8fe8bdote92d";
@@ -53,7 +55,13 @@ function search(event) {
   let searchFormInputElement = document.querySelector("#search-form-input");
   searchCity(searchFormInputElement.value);
 }
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "033b43a04493c2b0f53e8fe8bdote92d";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+function displayForecast(response) {
+  console.log(response.data);
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -77,4 +85,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", search);
 
 searchCity("Perth");
-displayForecast();
