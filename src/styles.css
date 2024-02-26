@@ -72,6 +72,9 @@ a {
   text-align: center;
   font-size: 50px;
 }
+.weather-forecast-temperature {
+  text-align: center;
+}
 .min-temp {
   opacity: 0.6;
 }
